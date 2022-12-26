@@ -3,38 +3,33 @@ package main
 import (
 	"crypto/sha256"
 	"fmt"
-
-	
 )
 
 func main() {
 
-
 	///////// hashing /////
 
-// 	password := []byte("")
-// 	// password1 := []byte("")
+	// 	password := []byte("")
+	// 	// password1 := []byte("")
 
-// 	hashedpassword, err := bcrypt.GenerateFromPassword(password, bcrypt.MinCost)
-// 	if err != nil {
-// 		panic(err)
-// 	}
+	// 	hashedpassword, err := bcrypt.GenerateFromPassword(password, bcrypt.MinCost)
+	// 	if err != nil {
+	// 		panic(err)
+	// 	}
 
-// 	fmt.Println(string(hashedpassword))
-// // err = 
-// 	err = bcrypt.CompareHashAndPassword(hashedpassword, password)
+	// 	fmt.Println(string(hashedpassword))
+	// // err =
+	// 	err = bcrypt.CompareHashAndPassword(hashedpassword, password)
 
-// 	if err != nil {
-// 		fmt.Println(err)
-// 	}
-
+	// 	if err != nil {
+	// 		fmt.Println(err)
+	// 	}
 
 	///////////// end ////////////
 
+	////// sha256 encrpty ///////////////////
 
-////// sha256 encrpty ///////////////////
-
-	s := "------"
+	s := "-------"
 
 	h := sha256.New()
 
@@ -44,7 +39,7 @@ func main() {
 
 	fmt.Println(s)
 
-	fmt.Printf("%x\n",bs)
+	fmt.Printf("%x\n", bs)
 
-///////////// end /////////
+	///////////// end /////////
 }
